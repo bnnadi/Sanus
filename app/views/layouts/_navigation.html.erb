@@ -1,0 +1,10 @@
+<%# navigation styled for Zurb Foundation 5 %>
+<nav class="top-bar navbar" data-topbar>
+  <ul class="title-area">
+    <li class= "name"><h1><%= link_to "Sanus", {:controller =>'../welcome',  :action => 'index'} %></h1></li>
+    <li class="toggle-topbar menu-icon"><%= link_to "Menu" %></li>
+  </ul>
+  <div class="top-bar-section">
+      <%= render 'layouts/navigation_links' %>
+  </div>
+</nav>

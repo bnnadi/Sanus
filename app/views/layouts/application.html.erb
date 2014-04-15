@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<%= favicon_link_tag '/favicon_32x32.ico' %>
+  	<%= favicon_link_tag '/Bisike-Logo_48x48x32.png', rel: 'apple-touch-icon', type: 'image/png'%>
+
+    <title><%= content_for?(:title) ? yield(:title) : "Sanus" %></title>
+	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Sanus | Let's eat right" %>">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <header class="nav">
+      <%= render 'layouts/navigation' %>
+    </header>
+	<main role="main" class="container large-12 large-centered columns">
+		<%= render 'layouts/messages' %>		
+		<%= yield %>			  
+	</main>
+	<footer>
+		<%= render 'layouts/footer' %>
+	</footer>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+defaults: &defaults
+  FatSecret:
+      api_key: "968de06cc1944b5aa1e2f27bafc36d0a"
+      api_secret: "d3d0943e9c1a43a5b32a40855e635553"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  FatSecret:
+      api_key: "968de06cc1944b5aa1e2f27bafc36d0a"
+      api_secret: "d3d0943e9c1a43a5b32a40855e635553"
