@@ -1,0 +1,14 @@
+<ul>
+	<% @choices.each do |item|%>
+		<li><%= link_to item, {:action => 'index', :food => item} %></li>
+	<% end %>
+</ul>
+
+
+<div>
+	<% if @recipes %>
+		<% @recipes.each do |recipe| %>
+			<li><%= link_to recipe.name, { :action => 'info', :id => recipe.id } %></li>
+		<% end %>
+	<% end %>
+</div>

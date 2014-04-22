@@ -1,0 +1,10 @@
+<div id="srchbr" class="row">
+	 <div class="large-10 columns">
+      <div id="search" class="search">
+      	<%= form_tag ({:controller => 'nutrition', :action => 'index', :searched => :searched }) do %>
+	        <%= text_field_tag :searched %>
+	  		<%= submit_tag %></span>
+      	<% end %>
+      </div>
+    </div>
+</div>

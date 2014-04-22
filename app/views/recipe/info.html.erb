@@ -1,0 +1,14 @@
+<h2><%= @recipe.name %></h2>
+
+<p><%= @recipe.rating %></p>
+
+<%= image_tag (@recipe.images.first.large_url) %>
+
+<p>total time: <%= @recipe.total_time %></p>
+
+<ul>
+	<% @recipe.ingredients.each do |item| %>
+		<li><%= item %></li>
+	<%end%>
+</ul>
+

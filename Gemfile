@@ -44,6 +44,9 @@ gem 'simple_form'
 # Use FatSecret Platform API to get food info
 gem 'food_info'
 
+# Yummlt's API 
+gem 'yummly'
+
 # Adding this to be able to use pagination
 gem 'will_paginate', '~> 3.0'
 

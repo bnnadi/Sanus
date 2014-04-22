@@ -1,0 +1,6 @@
+<h1>Nutrition list for <%= @searchFor %></h1>
+<ul>
+	<% @results.each do |data| %>
+	<li><%= link_to data.name, {:controller =>'../nutrition',  :action => 'info', :id => data.id } %></li>
+	<% end %>
+</ul>

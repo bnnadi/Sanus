@@ -1,0 +1,26 @@
+<div class="large-centered large-10">
+	<h1><%= @info.name %></h1>
+	<h4>Serving Size <%= @info.servings.first.serving_description %></h4>
+	<div class="panel large-4">
+		<ul>
+			<li>calcium: <%= @info.servings.first.calcium %></li>
+			<li>calories: <%= @info.servings.first.calories %></li>
+			<li>carbohydrate: <%= @info.servings.first.carbohydrate %></li>
+			<li>cholesterol: <%= @info.servings.first.cholesterol %></li>
+			<li>fat: <%= @info.servings.first.fat %></li>
+			<li>fiber: <%= @info.servings.first.fiber %></li>
+			<li>iron: <%= @info.servings.first.iron %></li>
+			<li>monounsaturated fat: <%= @info.servings.first.monounsaturated_fat %></li>
+			<li>polyunsaturated fat: <%= @info.servings.first.polyunsaturated_fat %></li>
+			<li>potassium: <%= @info.servings.first.potassium %></li>
+			<li>protein: <%= @info.servings.first.protein %></li>
+			<li>saturated fat: <%= @info.servings.first.saturated_fat %></li>
+			<li>sodium: <%= @info.servings.first.sodium %></li>
+			<li>sugar: <%= @info.servings.first.sugar %></li>
+			<li>trans fat: <%= @info.servings.first.trans_fat %></li>
+			<li>Vitamin A: <%= @info.servings.first.vitamin_a %></li>
+			<li>Vitamin C: <%= @info.servings.first.vitamin_c %></li>
+		</ul>
+		<%= link_to 'Fat Sercret', @info.servings.first.url %>
+	</div>
+</div>
